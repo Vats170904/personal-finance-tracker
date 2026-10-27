@@ -1,0 +1,34 @@
+# ---- Build output ----
+target/
+*.class
+*.jar
+*.war
+
+# ---- Personal financial data (never commit!) ----
+# Everything inside data/ is ignored except the placeholder that keeps the folder in Git.
+data/*
+!data/.gitkeep
+# Exported CSV files and backups saved anywhere else in the project
+*.csv
+!src/test/resources/**/*.csv
+*.tmp
+budget.properties
+
+# ---- Secrets ----
+.env
+*.env
+*.pem
+*.key
+
+# ---- IDE and editor files ----
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+*.swp
+
+# ---- Operating system files ----
+.DS_Store
+Thumbs.db
